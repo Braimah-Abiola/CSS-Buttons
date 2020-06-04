@@ -736,13 +736,73 @@ svg {
 
 /* End Button Flip */
 
+/* Start Button Flip 2*/
+
+.btn-flip2 {
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  border: dotted #323237;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+}
+.btn-flip2:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0) rotateX(0);
+          transform: translateY(0) rotateX(0);
+}
+.btn-flip2:hover:before {
+  opacity: 0;
+  -webkit-transform: translateY(50%) rotateX(90deg);
+          transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip2:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #323237;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  background: #adadaf;
+  content: attr(data-back);
+  -webkit-transform: translateY(-50%) rotateX(90deg);
+          transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip2:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #adadaf;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  background: #323237;
+  content: attr(data-front);
+  -webkit-transform: translateY(0) rotateX(0);
+          transform: translateY(0) rotateX(0);
+}
+
+/* End Button Flip 2*/
+
 /* Block Btn */
 
 .block-btn {
   padding: 15px 42px;
   box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
   line-height: 1.25;
-  margin-right: 20px;
+  margin-right: 10px;
   background: teal;
   text-decoration: none;
   color: white;
@@ -986,3 +1046,314 @@ div[class*=box] {
 
 
 /* Thin Button End */
+
+/* Round Btn */
+
+.round-btn {
+  padding: 15px 42px;
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  line-height: 1.25;
+  margin-right: 10px;
+  background: rgb(0, 60, 128);
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: background-color .6s ease;
+  transition: background-color .6s ease;
+  overflow: hidden;
+}
+.round-btn:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-style: flat;
+  transform-style: flat;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  -webkit-transition: width .3s ease, height .3s ease;
+  transition: width .3s ease, height .3s ease;
+}
+.round-btn:focus, .round-btn:hover {
+  background: transparent;
+  color: rgb(0, 60, 128);
+  border: solid rgb(0, 60, 128);
+  text-decoration: none;
+}
+.round-btn:active:after {
+  width: 200px;
+  height: 200px;
+}
+
+/* End Round Btn */
+
+/* Round Button 2 */
+
+.round-btn2 {
+  padding: 15px 42px;
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  line-height: 1.25;
+  background: transparent;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  width: 50px;
+  height: 80px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: background-color .6s ease;
+  transition: background-color .6s ease;
+  overflow: hidden;
+  border: solid rgb(0, 60, 128);
+}
+.round-btn2:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-style: flat;
+  transform-style: flat;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  -webkit-transition: width .3s ease, height .3s ease;
+  transition: width .3s ease, height .3s ease;
+}
+.round-btn2:focus, .round-btn2:hover {
+  background: rgb(0, 60, 128);
+  color: white;
+  text-decoration: none;
+}
+.round-btn2:active:after {
+  width: 200px;
+  height: 200px;
+}
+
+/* End Round Buttons 2 */
+
+/* Dark Btn */
+
+.dark-btn {
+  padding: 25px 52px;
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  line-height: 1.25;
+  background: rgb(0, 60, 128);
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: background-color .6s ease;
+  transition: background-color .6s ease;
+  overflow: hidden;
+}
+.dark-btn:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-style: flat;
+  transform-style: flat;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  -webkit-transition: width .3s ease, height .3s ease;
+  transition: width .3s ease, height .3s ease;
+}
+.dark-btn:focus, .dark-btn:hover {
+  background: transparent;
+  color: rgb(0, 60, 128);
+  border: solid rgb(0, 60, 128);
+  text-decoration: none;
+}
+.dark-btn:active:after {
+  width: 200px;
+  height: 200px;
+}
+
+.dark-btn i {
+  font-size: 40px;
+  margin-left: -30px;
+  margin-right: 20px;
+  vertical-align: -5px;
+  padding-top: 10px;
+}
+
+/* End Dark Btn */
+
+/* Dark Button 2 */
+
+.dark-btn2 {
+  padding: 25px 52px;
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  line-height: 1.25;
+  background: transparent;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  width: 50px;
+  height: 80px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: background-color .6s ease;
+  transition: background-color .6s ease;
+  overflow: hidden;
+  border: dotted rgb(0, 60, 128);
+}
+.dark-btn2:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-style: flat;
+  transform-style: flat;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  -webkit-transition: width .3s ease, height .3s ease;
+  transition: width .3s ease, height .3s ease;
+}
+.dark-btn2:focus, .dark-btn2:hover {
+  background: rgb(0, 60, 128);
+  color: white;
+  text-decoration: none;
+}
+.dark-btn2:active:after {
+  width: 200px;
+  height: 200px;
+}
+
+.dark-btn2 i {
+  font-size: 40px;
+  margin-left: -30px;
+  margin-right: 20px;
+  vertical-align: -5px;
+  padding-top: 10px;
+}
+
+
+/* End Round Buttons 2 */
+
+/* Send Button */
+
+.send-btn {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-left: 5px;
+  margin-right: 15px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #006eff;
+}
+
+.send-btn:hover{
+  background-color: #0055c4;
+}
+
+.send-btn i {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 15px;
+}
+
+
+/* End Send Button */
+
+/* Send Button Variation */
+
+.send-btn2 {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-left: 5px;
+  margin-right: 15px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: transparent;
+  border: dotted white;
+}
+
+.send-btn2:hover{
+  background-color: rgb(255, 153, 0);
+}
+
+.send-btn2 i {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* End Send Button Variation */
+
+/* Wrapper2 Start */
+
+.wrapper2{   
+  position: relative;
+  display:inline-block;  
+  margin:20px;
+}
+
+.wrapper2 a{  
+  display: block;  
+  width: 200px;  
+  height: 40px;  
+  line-height: 40px;  
+  font-size: 18px;  
+  font-family: sans-serif;  
+  text-decoration: none;  
+  color: rgb(77, 77, 77);  
+  border: 2px dotted rgb(124, 124, 124);  
+  letter-spacing: 2px;  
+  border-radius: 30px;
+  text-align: center;  
+  position: relative;  
+  transition: all .35s;}
+
+.wrapper2 a span{  
+  position: relative;  
+  z-index: 2;}
+
+.wrapper2 a:after{  
+  position: absolute;  
+  content: "";  
+  top: 0;  
+  left: 0;  
+  width: 0;  
+  height: 100%;
+  border-radius: 30px;  
+  background: #ee3838;  
+  transition: all .35s;}
+
+.wrapper2 a:hover{  color: #fff;}
+.wrapper2 a:hover:after{  width: 100%;}
+
+/* Wrapper2 End */
